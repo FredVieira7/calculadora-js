@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="description" content="Exemplo de descrição">
+        <meta name="keywords" content="palavras-chaves, separadas, por, virgulas">
+
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/estilo.css">
+        <title>Calculadora JS, JQuery e Bootstrap</title>
+    </head>
+
+    <body>
+
+            <div class="bg"></div>
+            <div class="abrir">
+                <button id="abrir" class="botao-abrir">Abrir calculadora</button>
+            </div>
+            
+            
+            <div class="main">
+                <div class="btnclose">
+                    X
+                </div>
+                <form>
+                    <input id="resultado" type="text" name="valor" placeholder="0" disabled>
+                </form>
+
+                <div class="row coluna">
+                    <button onclick="calcular('acao', '%')" class="btn btn-dark botao">%</button>
+                    <button onclick="calcular('acao', 'c')" class="btn btn-dark botao">C</button>
+                    <button onclick="calcular('acao', 'apagar')" class="btn btn-dark botao"><i class="fas fa-backspace"></i></button>
+                    <button onclick="calcular('acao', '*')" class="btn btn-dark botao">X</button>
+                </div>
+                <div class="row mt-3 coluna">
+                    <button onclick="calcular('valor', '7')" class="btn btn-dark botao">7</button>
+                    <button onclick="calcular('valor', '8')" class="btn btn-dark botao">8</button>
+                    <button onclick="calcular('valor', '9')" class="btn btn-dark botao">9</button>
+                    <button onclick="calcular('acao', '/')" class="btn btn-dark botao">/</button>
+                </div>
+                <div class="row mt-3 coluna">
+                    <button onclick="calcular('valor', '4')" class="btn btn-dark botao">4</button>
+                    <button onclick="calcular('valor', '5')" class="btn btn-dark botao">5</button>
+                    <button onclick="calcular('valor', '6')" class="btn btn-dark botao">6</button>
+                    <button onclick="calcular('acao', '-')" class="btn btn-dark botao">-</button>
+                </div>
+                <div class="row mt-3 coluna">
+                    <button onclick="calcular('valor', '1')" class="btn btn-dark botao">1</button>
+                    <button onclick="calcular('valor', '2')" class="btn btn-dark botao">2</button>
+                    <button onclick="calcular('valor', '3')" class="btn btn-dark botao">3</button>
+                    <button onclick="calcular('acao', '+')" class="btn btn-dark botao">+</button>
+                </div>
+                <div class="row mt-3 coluna">
+                    <button onclick="calcular('valor', '0')" class="btn btn-dark botao">0</button>
+                    <button onclick="calcular('acao', '.')" class="btn btn-dark botao">.</button>
+                    <button style="width: 43%;" onclick="calcular('acao', '=')" class="btn btn-primary botao">=</button>
+                </div>
+            </div>
+            
+
+        
+
+
+
+        <script src="https://kit.fontawesome.com/72fef56070.js" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+        <script src="js/function.js"></script>
+    </body>
+
+</html>
